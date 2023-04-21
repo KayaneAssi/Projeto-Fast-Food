@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Assi's Pizzaria</title>
+    <meta name="description" content="Cursos Desenvolvimento Web">
+    <meta name="robots" content="all">
+    <meta name="author" content="Kayane Assi">
+    <meta name="keywords" content="cursos, informática, css, html, javascript">
+
+    <style>*{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    html{
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+    header{
+        background-color: rgb(139,0,0);
+        color: white;
+        padding: 10px;
+        font-family: candara, arial;
+        width: 100%;
+       position: fixed;
+       z-index: 1;
+       text-shadow: 2px 2px 3px #000;
+    }
+    h3{
+        font-size: 3rem;
+        font-family: candara, arial;
+        margin: 0;
+        padding: 5px;
+    }
+    h4{
+        font-size: 1.6rem;
+        font-family: candara, arial;
+        margin: 0;
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+    body{
+        background-color:	rgb(255,255,224);
+    }
+    .conteiner{
+        display: block;
+        background-color: #F5F5F5;
+        width:70%;
+        box-shadow: 1px 1px 1px rgba(255,255,0);
+        margin: 0 auto;
+        margin-top: 40px;
+        max-width: 90%;
+        max-height: 90%;
+        min-width: 0;
+        min-height: 0;
+    }
+    footer{
+        font-family: candara, arial;
+        color: #fff;
+        background-color: rgb(139,0,0);
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-shadow: 2px 2px 3px #000;
+    }
+    p{
+        font-family: candara, arial;
+        text-align: justify;
+        padding: 5px;
+        font-size: 1.6rem;
+    }
+    h1{
+        font-family: candara, arial;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 5rem;
+        color: rgb(255, 6, 6);
+        text-shadow: 2px 2px 3px #000;
+    }
+    h2{
+        font-family: candara, arial;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 1.9rem;
+        color: rgb(0, 0, 0);
+       
+    }
+    .texto-footer{
+        text-align: center;
+        font-family: candara, arial;
+        padding-top: 10px;
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+    }
+    .compre{
+        background-color: rgb(255, 199, 46, 0.9);
+        width:18rem;
+        height: 13rem;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        margin-top: 20%;
+        z-index: 1;
+        border-radius: 30px;
+        border: solid #fff;
+    }
+    h5{
+        font-family: candara, arial;
+        text-align: center;
+        padding: 1px;
+        font-size: 1.9rem;
+    }
+    button{
+        font-family: arial;
+        text-align: center;
+        padding: 5px;
+        font-size: 2rem;
+        background-color: rgb(4, 219, 68);
+        color: #fff;
+        border: solid #000;
+        border-radius: 20px;
+        width: 90%;
+    }
+    #grid-conteiner{
+        margin-top: 5px;
+        background-color: rgba(255,165,0)
+
+    
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    .grid div{
+        background-color: #fff;
+        font-family: candara, arial;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 2px;
+        padding-bottom: 10px;
+        box-shadow: 0.2px 0.2px #000;
+    }
+    
+    a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1.0);
+        transition: all 400ms ease-in-out;
+    }
+    .imagem-grid{
+        width: 22rem;
+        height: 14rem;
+        border-radius: 20px;
+    }
+    .texto-grid{
+        font-family: candara, arial;
+        font-size: 1.7rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    .link-grid{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 1.9rem;
+        background-color: #000;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    #professor{
+        width: 20rem;
+        height: 25rem;
+        border-radius: 100%;
+        padding: 30px;
+    }
+    ul, li{
+        font-size: 1.6rem;
+        font-family:candara, arial;
+        text-align: left;
+        margin-left: 30px;
+        padding-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <header>
+       <!--
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Cursos</a>
+            <a href="#">Sobre</a>
+        </nav>
+        -->
+        <h3>Assi's Pizzaria</h3>
+        <h4>A Melhor PIzza da Região</h4>
+        
+    </header>
+    <div class="compre">
+        <h5>  Clique no botão abaixo <br> Peça por WhatsApp!</h5>
+        <button><a href="https://api.whatsapp.com/send?phone=5511957010157&text=Ol%C3%A1,%20gostaria%20fazer%20meu%20pedido.">COMPRA</a></button>
+    </div>
+    <br><br><br>
+    <section class="conteiner">
+        <h1>Assis's Pizzaria <br>50% de Desc. <br> De Seg a Qui.</h1>
+        
+    </section>
+    <br>
+    <!--
+    <section class="conteiner">
+        <h1>TecTreinamentos</h1>
+        <p>Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a fim de encontrar o melhor 
+        caminho racional para que a informação possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes
+        entre hardwares (equipamentos), softwares (programas) e o usuário final.
+        </p>
+        <p>Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a fim de encontrar o melhor 
+        caminho racional para que a informação possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes
+        entre hardwares (equipamentos), softwares (programas) e o usuário final.
+        </p>
+    </section>
+    -->
+    <br>
+    <br>
+    <section class="conteiner" id="grid-conteiner">
+        <h3>CONHEÇA NOSSSAS OPÇÕES DE PIZZAS:</h3>
+    <div class="grid">
+
+        <div>
+            <h2>Pizza de Calabresa</h2>
+            <br>
+            <img class="imagem-grid" src="img/calabresa.jpg" alt="pizza de calabresa">
+           
+        </div>
+
+        <div>
+            <h2>Pizza de Frango</h2>
+            <br>
+            <img class="imagem-grid" src="img/frango.jpg" alt="pizza de frango">
+            
+        </div>
+
+        <div>
+            <h2>Pizza de Marguerita</h2>
+            <br>
+            <img class="imagem-grid" src="img/marguerita.jpg" alt="pizza de marguerita">
+           
+
+        </div>
+
+        <div>
+
+            <h2>Pizza de Mussarela</h2>
+            <br>
+            <img class="imagem-grid" src="img/mussarela.jpg" alt="pizza de mussarela">
+           
+        </div>
+
+        <div>
+
+            <h2>Pizza de Palmito</h2>
+            <br>
+            <img class="imagem-grid" src="img/palmito.jpg" alt="pizza de palmito">
+           
+        </div>
+
+        <div>
+            <h2>Pizza de Portuguesa</h2>
+            <br>
+            <img class="imagem-grid" src="img/portuguesa.jpg" alt="pizza de portuguesa">
+            
+          
+        </div>
+
+    </div>
+
+</section>
+
+
+    <br>
+    <!--
+    <section class="conteiner" id="fomulário">
+
+        <h2>Selecione um produto para mais informações:</h2>
+
+        <form action="#" method="get" target="_blank">
+
+            <p class="formulário-contato">
+
+            <label for="nome">Nome Completo</label><br>
+            <input class="dados-formulario" type="text" id="nome" name="nome" placeholder="Insira seu nome:">
+
+            </p>
+
+            <p class="formulário-contato">
+
+                <label for="contato">Contato</label><br>
+                <input class="dados-formulario" type="tel" id="tel" name="tel" placeholder="Insira seu número:">
+    
+                </p>
+                <p class="formulario-contato">
+                    <input type="checkbox" name="office" id="office" value="cursos de office">
+                    <label for="office">Quero saber mais sobre cursos de Pacote Office</label>
+                    <br><br>
+
+                    <input type="checkbox" name="web" id="web" value="cursos de desenv web">
+                    <label for="web">Quero saber mais sobre cursos de Desenvolvimento Web</label>
+                    <br><br>
+
+                    <input type="checkbox" name="marketing" id="marketing" value="cursos de marketing">
+                    <label for="marketing">Quero saber mais sobre cursos de Marketing Digital</label>
+                    <br><br>
+                </p>
+                <p class="formulario-contato">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                    
+
+                </p>
+
+        </form>
+    </section>
+-->
+    <br>
+
+    <br><br>
+    <footer>
+        <h3>Kayane Assi</h3>
+        <h4>Front-End Essencial</h4>
+        <p class="texto-footer">Contatos:</p>
+        <p class="texto-footer">kayane.assi@gmail.com</p>
+        <p class="texto-footer">WhatsApp:(11)546415-54564</p>
+        <p class="texto-footer">CNPJ:00000/000-01</p>
+    </footer>
+</body>
+</html>
